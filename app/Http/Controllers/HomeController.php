@@ -32,6 +32,7 @@ class HomeController extends Controller
     public function ministries(){
         //Read all ministries in database
         $ministries = Ministries::all();
+
         return view('main/ministries' , ['ministries' => $ministries]);   
     }
 
